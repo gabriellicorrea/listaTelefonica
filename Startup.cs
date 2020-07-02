@@ -40,7 +40,7 @@ namespace ListaTelefonica
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Contatos/Error");
             }
 
             app.UseStaticFiles();
