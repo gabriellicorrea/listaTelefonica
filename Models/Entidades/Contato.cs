@@ -16,19 +16,19 @@ namespace ListaTelefonica.Models.Entidades
         public int Id { get; set; }
 
         [Display(Description = "Nome do usuario")]
-        public int Nome { get; set; }
+        public string Nome { get; set; }
 
         [Display(Description = "Email")]
-        public int Email { get; set; }
+        public string Email { get; set; }
 
         [Display(Description = "CPF")]
-        public int CPF { get; set; }
+        public string CPF { get; set; }
 
         [Display(Description = "Lista de telefone")]
-        public int ListaTelefone { get; set; }
+        public string ListaTelefone { get; set; }
 
         [Display(Description = "Lista de endereco")]
-        public int ListaEndereco { get; set; }
+        public string ListaEndereco { get; set; }
 
     }
 }

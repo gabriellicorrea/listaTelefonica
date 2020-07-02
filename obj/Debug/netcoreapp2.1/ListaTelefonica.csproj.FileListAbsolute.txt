@@ -11,7 +11,6 @@ C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\bin\Debug\netcoreapp
 C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.csprojAssemblyReference.cache
 C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.AssemblyInfoInputs.cache
 C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.AssemblyInfo.cs
-C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.csproj.CoreCompileInputs.cache
 C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.RazorAssemblyInfo.cache
 C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.RazorAssemblyInfo.cs
 C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.TagHelpers.input.cache
@@ -34,3 +33,9 @@ C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp
 C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.pdb
 C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.genruntimeconfig.cache
 C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.csproj.CopyComplete
+C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.csproj.CoreCompileInputs.cache
+C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Contatos\Index.cshtml.g.cs
+C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Contatos\Create.cshtml.g.cs
+C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Contatos\Edit.cshtml.g.cs
+C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Contatos\Delete.cshtml.g.cs
+C:\Users\Kaue\source\repos\workspace dotnet\ListaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Contatos\Details.cshtml.g.cs

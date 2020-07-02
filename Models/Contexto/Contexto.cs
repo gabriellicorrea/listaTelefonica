@@ -11,7 +11,7 @@ namespace ListaTelefonica.Models.Contexto
 {
     public class Contexto : DbContext
     {
-        public Contexto(DbContextOptions<Contexto> option) : base(option)
+        public Contexto(DbContextOptions<Contexto> options) : base(options)
         {
             Database.EnsureCreated();
         }

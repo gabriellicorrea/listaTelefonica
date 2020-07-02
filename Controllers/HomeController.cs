@@ -17,7 +17,7 @@ namespace ListaTelefonica.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "testando app";
 
             return View();
         }
