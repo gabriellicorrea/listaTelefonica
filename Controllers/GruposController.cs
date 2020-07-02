@@ -69,5 +69,34 @@ namespace ListaTelefonica.Controllers
                 return View(grupo);
             }
         }
+
+        [HttpGet]
+        public IActionResult Delete(int Id)
+        {
+            var grupo = _contexto.Grupo.Find(Id);
+            return View(grupo);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(Grupo _grupo)
+        {
+            var grupo = _contexto.Grupo.Find(_grupo.Id);
+            if (grupo != null)
+            {
+                _contexto.Grupo.Remove(grupo);
+                _contexto.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+            return View(grupo);
+        }
+
+        [HttpGet]
+        public IActionResult Details(int Id)
+        {
+            var grupo = _contexto.Grupo.Find(Id);
+            return View(grupo);
+        }
+
     }
 }
