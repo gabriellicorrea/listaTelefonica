@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SPeS4yNDQmbw3VD5ut/rp7SlayqVaZQIfroS0TwgQ+eX9IKNeWsdSFsU/lMxyGzDjHEiZu4Uw1DXej7e4FTt4g==",
+  "dgSpecHash": "9DrglQFUWmZIPPigGP4xUiyQjKYhAYfXZy0tIe4jfRg7coyW+yHsT2OWp1iqsYnbCxc9DlR0LWp1PjMHA8wOjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kaue\\source\\repos\\workspace dotnet\\ListaTelefonica\\ListaTelefonica.csproj",
+  "projectFilePath": "C:\\Users\\Kaue\\Source\\Repos\\gabriellicorrea\\listaTelefonica\\ListaTelefonica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kaue\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Kaue\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

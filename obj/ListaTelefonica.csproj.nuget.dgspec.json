@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kaue\\source\\repos\\workspace dotnet\\ListaTelefonica\\ListaTelefonica.csproj": {}
+    "C:\\Users\\Kaue\\Source\\Repos\\gabriellicorrea\\listaTelefonica\\ListaTelefonica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kaue\\source\\repos\\workspace dotnet\\ListaTelefonica\\ListaTelefonica.csproj": {
+    "C:\\Users\\Kaue\\Source\\Repos\\gabriellicorrea\\listaTelefonica\\ListaTelefonica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kaue\\source\\repos\\workspace dotnet\\ListaTelefonica\\ListaTelefonica.csproj",
+        "projectUniqueName": "C:\\Users\\Kaue\\Source\\Repos\\gabriellicorrea\\listaTelefonica\\ListaTelefonica.csproj",
         "projectName": "ListaTelefonica",
-        "projectPath": "C:\\Users\\Kaue\\source\\repos\\workspace dotnet\\ListaTelefonica\\ListaTelefonica.csproj",
+        "projectPath": "C:\\Users\\Kaue\\Source\\Repos\\gabriellicorrea\\listaTelefonica\\ListaTelefonica.csproj",
         "packagesPath": "C:\\Users\\Kaue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kaue\\source\\repos\\workspace dotnet\\ListaTelefonica\\obj\\",
+        "outputPath": "C:\\Users\\Kaue\\Source\\Repos\\gabriellicorrea\\listaTelefonica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kaue\\AppData\\Roaming\\NuGet\\NuGet.Config",
