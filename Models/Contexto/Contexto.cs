@@ -17,5 +17,8 @@ namespace ListaTelefonica.Models.Contexto
         }
 
         public DbSet<Contato> Contato { get; set; }
+
+        public DbSet<Grupo> Grupo { get; set; }
+
     }
 }

@@ -52,7 +52,6 @@ C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\bin\Debug\netcoreapp2
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.csprojAssemblyReference.cache
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.AssemblyInfoInputs.cache
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.AssemblyInfo.cs
-C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.csproj.CoreCompileInputs.cache
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.RazorAssemblyInfo.cache
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.RazorAssemblyInfo.cs
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.TagHelpers.input.cache
@@ -81,3 +80,4 @@ C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.genruntimeconfig.cache
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.csproj.CopyComplete
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Grupos\Index.cshtml.g.cs
+C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.csproj.CoreCompileInputs.cache

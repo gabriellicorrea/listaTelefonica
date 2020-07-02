@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9DrglQFUWmZIPPigGP4xUiyQjKYhAYfXZy0tIe4jfRg7coyW+yHsT2OWp1iqsYnbCxc9DlR0LWp1PjMHA8wOjw==",
+  "dgSpecHash": "lomJ0YVdkpFBjlySTAO9VtyfhGsINaO8wr0zWStYug3j2Xt2aWAkg9JuXw6VYnpHSxWO/ezDXN2OhO990+ed2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kaue\\Source\\Repos\\gabriellicorrea\\listaTelefonica\\ListaTelefonica.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Kaue\\.nuget\\packages\\documentformat.openxml\\2.11.0\\documentformat.openxml.2.11.0.nupkg.sha512",
     "C:\\Users\\Kaue\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Kaue\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
     "C:\\Users\\Kaue\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",
@@ -237,6 +238,7 @@
     "C:\\Users\\Kaue\\.nuget\\packages\\system.io.compression\\4.3.0\\system.io.compression.4.3.0.nupkg.sha512",
     "C:\\Users\\Kaue\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Kaue\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\Kaue\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
     "C:\\Users\\Kaue\\.nuget\\packages\\system.io.pipelines\\4.5.0\\system.io.pipelines.4.5.0.nupkg.sha512",
     "C:\\Users\\Kaue\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\Kaue\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",

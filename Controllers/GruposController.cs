@@ -6,11 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ListaTelefonica.Controllers
 {
-    public class Grupos : Controller
+    public class GruposController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
+
     }
 }

@@ -186,12 +186,12 @@ using ListaTelefonica.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n    \r\n    ");
             EndContext();
             BeginContext(1230, 169, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7347d34eb35840baa1cb28220e862dc7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "937eb30222e14e5cb505044b3c1262ce", async() => {
                 BeginContext(1256, 85, true);
                 WriteLiteral("\r\n        <input type=\"submit\" value=\"Deletar\" class=\"btn btn-default\" /> |\r\n        ");
                 EndContext();
                 BeginContext(1341, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a35d800f74db44a084c3f6bfc899ff49", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d15a4363aa14d6695f32294780f4b49", async() => {
                     BeginContext(1363, 19, true);
                     WriteLiteral("Voltar para a lista");
                     EndContext();
