@@ -8,9 +8,5 @@ namespace ListaTelefonica.Controllers
 {
     public class TelefonesController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }
