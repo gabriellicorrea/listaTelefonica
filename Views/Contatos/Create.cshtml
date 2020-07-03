@@ -21,31 +21,7 @@
                 <input asp-for="CPF" data-mask="000.000.000-00" id="cpf" class="form-control" />
                 <span asp-validation-for="CPF" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Tipo" class="control-label">Tipo de telefone</label>
-                <Select asp-for="Tipo" class="form-control" asp-items="ViewBag.TipoTelefone"></Select>
-                <span asp-validation-for="Tipo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DDD" class="control-label"></label>
-                <input asp-for="DDD" class="form-control" />
-                <span asp-validation-for="DDD" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input id="email" asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Numero" class="control-label"></label>
-                <input asp-for="Numero" class="form-control" />
-                <span asp-validation-for="Numero" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Ramal" class="control-label"></label>
-                <input asp-for="Ramal"  class="form-control" />
-                <span asp-validation-for="Ramal" class="text-danger"></span>
-            </div>
+            
             <div class="form-group">
                 <label asp-for="CEP" id="cep" class="control-label"></label>
                 <input asp-for="CEP" data-mask="00000-000" placeholder="Ex.: 00000-000" class="form-control" on />
@@ -106,7 +82,7 @@
         if (e.test(email)) {
             return email;
         } else {
-            alert("Digite um email valido1");
+            alert("Digite um email valido.");
             return false
         }
     }
@@ -175,7 +151,7 @@
                     return false;
                 }
             } */
-  s
+  
     function limpa_formulário_cep() {
         // Limpa valores do formulário de cep.
         $("#rua").val("");
@@ -194,7 +170,7 @@
         if (cep != "") {
 
             //Expressão regular para validar o CEP.
-            var validacep = /^[0-9]{8}$/;
+            var validacep = /^[0-9]{2}\.[0-9]{3}-[0-9]{3}$/;
 
             //Valida o formato do CEP.
             if (validacep.test(cep)) {

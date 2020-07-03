@@ -16,9 +16,12 @@ namespace ListaTelefonica.Models.Contexto
             Database.EnsureCreated();
         }
 
+        public DbSet<Telefones> Telefones { get; set; }
         public DbSet<Contato> Contato { get; set; }
 
         public DbSet<Grupo> Grupo { get; set; }
+
+        
 
     }
 }
