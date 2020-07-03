@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DocumentFormat.OpenXml.Office2013.PowerPoint.Roaming;
 using ListaTelefonica.Models.Contexto;
 using ListaTelefonica.Models.Entidades;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ListaTelefonica.Controllers
 {
@@ -19,6 +21,7 @@ namespace ListaTelefonica.Controllers
         public IActionResult Index()
         {
           var lista =  _contexto.Contato.ToList();
+            CarregaTipoTelefone();
             return View(lista);
         }
 
@@ -26,7 +29,7 @@ namespace ListaTelefonica.Controllers
         public IActionResult Create()
         {
             var contato = new Contato();
-            
+            CarregaTipoTelefone();
             return View(contato);
         }
 
@@ -40,6 +43,7 @@ namespace ListaTelefonica.Controllers
                 
                 return RedirectToAction("index");
             }
+
             return View(contato);
         }
 
@@ -50,6 +54,7 @@ namespace ListaTelefonica.Controllers
             if(contato != null)
             {
             }
+            CarregaTipoTelefone();
             return View(contato);
         }
 
@@ -72,6 +77,7 @@ namespace ListaTelefonica.Controllers
         public IActionResult Delete(int Id)
         {
             var contato = _contexto.Contato.Find(Id);
+            CarregaTipoTelefone();
             return View(contato);
         }
 
@@ -93,7 +99,18 @@ namespace ListaTelefonica.Controllers
         public IActionResult Details(int Id)
         {
             var contato = _contexto.Contato.Find(Id);
+            CarregaTipoTelefone();
             return View(contato);
+        }
+
+        public void CarregaTipoTelefone()
+        {
+            var ItensTipoTelefone = new List<SelectListItem>
+            {
+                new SelectListItem{ Value = "Celular", Text = "Celular" },
+                new SelectListItem{ Value = "Tefelone", Text = "Telefone Fixo" }
+            };
+            ViewBag.TipoTelefone = ItensTipoTelefone;
         }
 
     }

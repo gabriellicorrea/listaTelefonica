@@ -9,7 +9,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" name="form">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
@@ -20,6 +20,11 @@
                 <label asp-for="CPF" class="control-label"></label>
                 <input asp-for="CPF" data-mask="000.000.000-00" id="cpf" class="form-control" />
                 <span asp-validation-for="CPF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label">Tipo de telefone</label>
+                <Select asp-for="Tipo" class="form-control" asp-items="ViewBag.TipoTelefone"></Select>
+                <span asp-validation-for="Tipo" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ListaTelefone" class="control-label"></label>
@@ -54,7 +59,7 @@
    $(document).ready(function () {
       $("#cpf").Mask('000.000.000-00', { reverse: true });
    });
-  
+
    $("#email").blur(function () {
        validarEmail(this.value)
     });
@@ -62,17 +67,17 @@
         verificarCPF(this.value)
     });
 
-    function validarEmail(email) {        
+    function validarEmail(email) {
         var e = /^\w+([-+.']\w+)*@@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
         if (e.test(email)) {
-            return email;   
+            return email;
         } else {
             alert("Digite um email valido1");
             return false
         }
     }
-    
-    function verificarCPF(c) {       
+
+    function verificarCPF(c) {
         var i;
         s = c.replace(/[^\d]+/g, '');
         var c = s.substr(0, 9);
@@ -111,6 +116,31 @@
 
         }
     }
+
+
+   /* function validar(){
+                var nome = form.nome.value;
+                var email = form.email.value;
+                var CPF = formu.CPF.value;
+
+                if(nome == ""){
+                    alert('Preencha o campo nomeEEEEEEEEE.');
+                    form.nome.focus();
+                    return false;
+                }
+
+                if(email == ""){
+                    alert('Preencha o campo E-mail.');
+                    form.email.focus();
+                    return false;
+                }
+
+                if(CPF == "" ){
+                    alert('Preencha o campo CPF');
+                    formuser.CPF.focus();
+                    return false;
+                }
+            } */
 
 </script>
 

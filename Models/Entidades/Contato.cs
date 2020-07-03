@@ -18,14 +18,16 @@ namespace ListaTelefonica.Models.Entidades
 
         [Display(Description = "Nome do usuario")]
         [StringLength(100)]
-        [Required(ErrorMessage = "Nome Obrigatorio")]
+        [Required(ErrorMessage = "Nome obrigatorio.")]
         public string Nome { get; set; }
 
+        [Required(ErrorMessage = "Digite um Email valido.")]
         [Display(Description = "Email")]
         [StringLength(100)]
         public string Email { get; set; }
 
         [StringLength(14)]
+        [Required(ErrorMessage = "Digite um CPF valido.")]
         [Display(Description = "CPF")]
         public string CPF { get; set; }
 
@@ -34,6 +36,9 @@ namespace ListaTelefonica.Models.Entidades
 
         [Display(Description = "Lista de endereco")]
         public string ListaEndereco { get; set; }
+
+        public string Tipo { get; set; }
+
 
     }
 }
