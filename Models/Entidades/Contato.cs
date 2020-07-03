@@ -15,12 +15,17 @@ namespace ListaTelefonica.Models.Entidades
         [Display(Description = "Codigo")]
         public int Id { get; set; }
 
+
         [Display(Description = "Nome do usuario")]
+        [StringLength(100)]
+        [Required(ErrorMessage = "Nome Obrigatorio")]
         public string Nome { get; set; }
 
         [Display(Description = "Email")]
+        [StringLength(100)]
         public string Email { get; set; }
 
+        [StringLength(11)]
         [Display(Description = "CPF")]
         public string CPF { get; set; }
 

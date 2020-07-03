@@ -12,6 +12,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="CustomValidationCPFAttribute.cs" />
+    <Compile Remove="IClientValidatable.cs" />
+    <Compile Remove="Mod11.cs" />
+    <Compile Remove="ModelClientValidationRule.cs" />
+    <Compile Remove="Validacao.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="DocumentFormat.OpenXml" Version="2.11.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
