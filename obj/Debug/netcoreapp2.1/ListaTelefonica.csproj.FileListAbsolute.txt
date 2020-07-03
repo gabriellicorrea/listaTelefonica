@@ -86,3 +86,7 @@ C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.csproj.CopyComplete
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\ListaTelefonica.csprojAssemblyReference.cache
 C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Telefones\Index.cshtml.g.cs
+C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Telefones\Create.cshtml.g.cs
+C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Telefones\Edit.cshtml.g.cs
+C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Telefones\Delete.cshtml.g.cs
+C:\Users\Kaue\Source\Repos\gabriellicorrea\listaTelefonica\obj\Debug\netcoreapp2.1\Razor\Views\Telefones\Details.cshtml.g.cs

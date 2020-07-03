@@ -21,7 +21,31 @@
                 <input asp-for="CPF" data-mask="000.000.000-00" id="cpf" class="form-control" />
                 <span asp-validation-for="CPF" class="text-danger"></span>
             </div>
-            
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label">Tipo de telefone</label>
+                <Select asp-for="Tipo" class="form-control" asp-items="ViewBag.TipoTelefone"></Select>
+                <span asp-validation-for="Tipo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DDD" class="control-label"></label>
+                <input asp-for="DDD" class="form-control" />
+                <span asp-validation-for="DDD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input id="email" asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Numero" class="control-label"></label>
+                <input asp-for="Numero" class="form-control" />
+                <span asp-validation-for="Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ramal" class="control-label"></label>
+                <input asp-for="Ramal" class="form-control" />
+                <span asp-validation-for="Ramal" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="CEP" id="cep" class="control-label"></label>
                 <input asp-for="CEP" data-mask="00000-000" placeholder="Ex.: 00000-000" class="form-control" on />
@@ -68,10 +92,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 <script>
 
-   
 
-   $("#email").blur(function () {
-       validarEmail(this.value)
+
+    $("#email").blur(function () {
+        validarEmail(this.value)
     });
     $("#cpf").blur(function (c) {
         verificarCPF(this.value)
@@ -128,30 +152,30 @@
     }
 
 
-   /* function validar(){
-                var nome = form.nome.value;
-                var email = form.email.value;
-                var CPF = formu.CPF.value;
+    /* function validar(){
+                 var nome = form.nome.value;
+                 var email = form.email.value;
+                 var CPF = formu.CPF.value;
 
-                if(nome == ""){
-                    alert('Preencha o campo nomeEEEEEEEEE.');
-                    form.nome.focus();
-                    return false;
-                }
+                 if(nome == ""){
+                     alert('Preencha o campo nomeEEEEEEEEE.');
+                     form.nome.focus();
+                     return false;
+                 }
 
-                if(email == ""){
-                    alert('Preencha o campo E-mail.');
-                    form.email.focus();
-                    return false;
-                }
+                 if(email == ""){
+                     alert('Preencha o campo E-mail.');
+                     form.email.focus();
+                     return false;
+                 }
 
-                if(CPF == "" ){
-                    alert('Preencha o campo CPF');
-                    formuser.CPF.focus();
-                    return false;
-                }
-            } */
-  
+                 if(CPF == "" ){
+                     alert('Preencha o campo CPF');
+                     formuser.CPF.focus();
+                     return false;
+                 }
+             } */
+
     function limpa_formulário_cep() {
         // Limpa valores do formulário de cep.
         $("#rua").val("");
@@ -179,7 +203,7 @@
                 $("#bairro").val("...");
                 $("#cidade").val("...");
                 $("#estado").val("...");
-              
+
 
                 //Consulta o webservice viacep.com.br/
                 $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
@@ -209,7 +233,7 @@
             limpa_formulário_cep();
         }
     });
-     
+
 
 </script>
 

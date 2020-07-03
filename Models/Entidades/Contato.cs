@@ -13,8 +13,8 @@ namespace ListaTelefonica.Models.Entidades
     public class Contato
     {
         [Display(Description = "Codigo")]
-        public int Id { get; set; }
 
+        public int Id { get; set; }
         [Display(Description = "Nome do usuario")]
         [StringLength(100)]
         [Required(ErrorMessage = "Nome obrigatorio.")]
@@ -29,6 +29,20 @@ namespace ListaTelefonica.Models.Entidades
         [Required(ErrorMessage = "Digite um CPF valido.")]
         [Display(Description = "CPF")]
         public string CPF { get; set; }
+
+        [Required(ErrorMessage = "Escolha o tipo de telefone")]
+        public string Tipo { get; set; }
+
+        [Required(ErrorMessage = "Informe o DDD")]
+        public string DDD { get; set; }
+
+
+        [Required(ErrorMessage = "Informe o numero ")]
+        public string Numero { get; set; }
+
+
+        public string Ramal { get; set; }
+
         [Required]
         public string NomeReferência { get; set; }
 

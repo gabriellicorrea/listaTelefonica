@@ -10,12 +10,8 @@ namespace ListaTelefonica.Models.Entidades
     public class Telefones
     {
         [Key]
-        public string Id { get; set; }
-
-        [ForeignKey("ContatoId")]
-        public int ContatoId { get; set; }
-        public virtual Contato Contato { get; set; }
-
+        public string Id { get; set; } 
+        
         [Required(ErrorMessage = "Escolha o tipo de telefone")]
         public string Tipo { get; set; }
 

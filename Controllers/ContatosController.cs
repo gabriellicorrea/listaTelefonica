@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DocumentFormat.OpenXml.Office2013.PowerPoint.Roaming;
+using DocumentFormat.OpenXml.Spreadsheet;
+using DocumentFormat.OpenXml.Vml.Spreadsheet;
 using ListaTelefonica.Models.Contexto;
 using ListaTelefonica.Models.Entidades;
 using Microsoft.AspNetCore.Mvc;
@@ -26,6 +28,8 @@ namespace ListaTelefonica.Controllers
             return View(lista);
         }
 
+        
+
         [HttpGet]
         public IActionResult Create()
         {
@@ -38,27 +42,16 @@ namespace ListaTelefonica.Controllers
         [HttpPost]
         public IActionResult Create(Contato contato)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _contexto.Contato.Add(contato);
                 _contexto.SaveChanges();
-                
-                return RedirectToAction("index");
+                return RedirectToAction("Index");
             }
-
-            return View(contato);
-        }
-
-        [HttpGet]
-        public IActionResult Edit(int Id)
-        {
-            var contato = _contexto.Contato.Find(Id);
-            if(contato != null)
+            else
             {
+                return View(contato);
             }
-            CarregaTipoTelefone();
-            CarregaEstado();
-            return View(contato);
         }
 
         [HttpPost]
