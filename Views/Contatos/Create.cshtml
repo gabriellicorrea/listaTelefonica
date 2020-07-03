@@ -17,13 +17,8 @@
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="CPF" class="control-label"></label>
-                <input asp-for="CPF" class="form-control"  onblur="return verificarCPF(this.value)"/>
+                <input asp-for="CPF" data-mask="000.000.000-00" id="cpf" class="form-control" />
                 <span asp-validation-for="CPF" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -32,13 +27,19 @@
                 <span asp-validation-for="ListaTelefone" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input id="email" asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="ListaEndereco" class="control-label"></label>
                 <input asp-for="ListaEndereco" class="form-control" />
                 <span asp-validation-for="ListaEndereco" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Criar" class="btn btn-default" />
+                <input type="submit" id="sub" value="Criar" class="btn btn-default" />
             </div>
+            <span id="resultado"></span>
         </form>
     </div>
 </div>
@@ -46,13 +47,34 @@
 <div>
     <a asp-action="Index">Voltar para a lista</a>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 <script>
-        
-    function verificarCPF(c) {
-        alert("oi")
+
+   $(document).ready(function () {
+      $("#cpf").Mask('000.000.000-00', { reverse: true });
+   });
+  
+   $("#email").blur(function () {
+       validarEmail(this.value)
+    });
+    $("#cpf").blur(function (c) {
+        verificarCPF(this.value)
+    });
+
+    function validarEmail(email) {        
+        var e = /^\w+([-+.']\w+)*@@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+        if (e.test(email)) {
+            return email;   
+        } else {
+            alert("Digite um email valido1");
+            return false
+        }
+    }
+    
+    function verificarCPF(c) {       
         var i;
-        s = c;
+        s = c.replace(/[^\d]+/g, '');
         var c = s.substr(0, 9);
         var dv = s.substr(9, 2);
         var d1 = 0;
@@ -62,14 +84,14 @@
             d1 += c.charAt(i) * (10 - i);
         }
         if (d1 == 0) {
-            alert("CPF Inválido")
+            alert("Digite um CPF válido")
             v = true;
             return false;
         }
         d1 = 11 - (d1 % 11);
         if (d1 > 9) d1 = 0;
         if (dv.charAt(0) != d1) {
-            alert("CPF Inválido")
+            alert("Digite um CPF válido")
             v = true;
             return false;
         }
@@ -81,12 +103,12 @@
         d1 = 11 - (d1 % 11);
         if (d1 > 9) d1 = 0;
         if (dv.charAt(1) != d1) {
-            alert("CPF Inválido")
+            alert("Digite um CPF válido")
             v = true;
             return false;
         }
         if (!v) {
-            alert(c + "nCPF Válido")
+
         }
     }
 

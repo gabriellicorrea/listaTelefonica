@@ -229,7 +229,7 @@ using ListaTelefonica.Models;
             WriteLiteral("    </tbody>\r\n</table>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(1901, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5edaa96ccebc45199dfe1ee9ed69a2d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d062c9c3b6644ae80e03beb1b5c2aa5", async() => {
                 BeginContext(1924, 21, true);
                 WriteLiteral("Criar um novo contato");
                 EndContext();

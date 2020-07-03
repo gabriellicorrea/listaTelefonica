@@ -25,7 +25,7 @@ namespace ListaTelefonica.Models.Entidades
         [StringLength(100)]
         public string Email { get; set; }
 
-        [StringLength(11)]
+        [StringLength(14)]
         [Display(Description = "CPF")]
         public string CPF { get; set; }
 
